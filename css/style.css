@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9df1bb;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    background-color: #000000;
+    background-color: #000000;
+    color: #fff;
+}
+label {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: "arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+#bt_menu {
+    display: none;
+}
+label {
+    display: none;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0px;  
+}
+
+li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.log {
+    display: flex;
+    margin-right: 550px;
+    font-size: 25px;
+    margin-left: 12px;
+    align-items: center;
+    cursor: text;
+}
+
+.log img {
+    width: 50px;
+    margin: 10px;
+}
+
+.divisao {
+    border-left: 1px solid #fff;
+    height: 20px;
+    cursor: text;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.mensage {
+    width: 690px;
+    padding: 60px;
+    color: #222379;
+}
+
+.text-1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.mensage h1 {
+    font-size: 65px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+.mensage h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.pianin img {
+    width: 550px;
+    padding: 30px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: #96f0b5;
+    cursor: pointer;
+    background-color: #222379;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 580;
+    text-transform: uppercase;
+}
+button:hover {
+    color: #fff;
+    background-color: black;
+}
+.text-2 {
+    font-size: 12px;
+    font-weight: 200;
+}
+a:hover {
+    font-size: 110%;
+}
+.cad {
+    margin-right: 5px;
+}
+@media(max-width: 1280px) {
+    section {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .mensage {
+        width: 690px;
+        padding: 60px;
+        color: #222379;
+    }
+    .pianin {
+        margin-left: 0px;
+    }
+    .pianin img {
+        width: 450px;
+        margin-right: 0px;
+    }
+}
+@media(max-width: 952px) {
+    label {
+        display: block;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu {
+        margin-top: 0px;
+        margin-left: -65%;
+        transition: all .4s;
+    }
+   
+    #bt_menu:checked ~ .menu{
+        margin-left: 100%;
+    }
+    .log {
+        display: flex;
+        margin-right: 0px;
+        font-size: 25px;
+        margin-left: 550px;
+        align-items: center;
+    }
+    
+    .log img {
+        width: 50px;
+        margin: 10px;
+    }
+    
+    .menu ul {
+        position: static;
+        overflow: hidden;
+        max-height: 44px;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+    .pianin img {
+        width: 500px;
+        margin-left: 100px;
+        
+    }
+}
+
+@media (max-width: 411px){
+    label {
+        display: block;
+    }
+    .menu ul li {
+        width: 10%;
+        float: none;
+        padding-left: 290px;
+    }
+    
+    .divisao {
+        display: none;
+    }
+    .menu {
+        margin-top: 0px;
+        margin-left: -65%;
+        transition: all .4s;
+    }
+   
+    #bt_menu:checked ~ .menu{
+        margin-left: 100%;
+    }
+    .log {
+        display: flex;
+        margin-right: 0px;
+        font-size: 20px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+    .pianin {
+        margin-top: -150px;
+    }
+    .pianin img {
+        width: 350px;
+        margin-left: 0px;
+    }
+    
+    .log p {
+        display: none;
+    }
+    .log img {
+        display: none;
+        width: 30px;
+    }
+    ul {
+        font-size: 30px;
+    }
+    ul li {
+        margin-left: -280px;
+    }
+
+    
+    .menu ul {
+        position: static;
+        overflow: hidden;
+        max-height: 44px;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    ul li a{
+        padding: 8px;
+        text-align: center;
+        font-size: 11px;
+        align-items: center;
+        background-color: #000000;
+    }
+	
+}
+@media (max-width: 375px){
+	label {
+        display: block;
+    }
+    .menu ul li {
+        width: 10%;
+        float: none;
+        padding-left: 290px;
+    }
+    
+    .divisao {
+        display: none;
+    }
+    .menu {
+        margin-top: 0px;
+        margin-left: -65%;
+        transition: all .4s;
+    }
+   
+    #bt_menu:checked ~ .menu{
+        margin-left: 100%;
+    }
+    .log {
+        display: flex;
+        margin-right: 0px;
+        font-size: 20px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+    .mensage {
+        width: 690px;
+        margin-top: 50px;
+        padding: 2px;
+        color: #222379;
+    }
+
+    .pianin {
+        margin-top: -150px;
+    }
+    .pianin img {
+        width: 350px;
+        margin-left: -10px;
+    }
+    
+    .log p {
+        display: none;
+    }
+    .log img {
+        display: none;
+        width: 30px;
+    }
+    ul {
+        font-size: 30px;
+    }
+    ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        width: 50%;
+        margin-right: 0px;
+    }
+
+    
+    .menu ul {
+        position: static;
+        overflow: hidden;
+        max-height: 44px;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    ul li a{
+        padding: 8px;
+        text-align: center;
+        font-size: 11px;
+        align-items: center;
+        background-color: #000000;
+    }
+}
+@media (max-width: 540px){
+	label {
+        display: block;
+    }
+    .menu ul li {
+        width: 10%;
+        float: none;
+        padding-left: 290px;
+    }
+    
+    .divisao {
+        display: none;
+    }
+    .menu {
+        margin-top: 0px;
+        margin-left: -65%;
+        transition: all .4s;
+    }
+   
+    #bt_menu:checked ~ .menu{
+        margin-left: 100%;
+    }
+    .log {
+        display: flex;
+        margin-right: 0px;
+        font-size: 20px;
+        margin-left: 0px;
+        align-items: center;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0px;
+        text-align: center;
+
+    }
+    .pianin {
+        margin-top: -150px;
+    }
+    .pianin img {
+        width: 350px;
+        margin-left: 0px;
+    }
+    
+    .log p {
+        display: none;
+    }
+    .log img {
+        display: none;
+        width: 30px;
+    }
+    ul {
+        font-size: 30px;
+    }
+    ul li {
+        margin-left: -280px;
+    }
+
+    
+    .menu ul {
+        position: static;
+        overflow: hidden;
+        max-height: 44px;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    ul li a{
+        padding: 8px;
+        text-align: center;
+        font-size: 11px;
+        align-items: center;
+        background-color: #000000;
+    }
+	
+}
